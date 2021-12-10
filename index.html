@@ -199,23 +199,33 @@
                                 <br><br>
                                 <p><b>!oquote</b> - What to quote something you overheared in your day to day life, or a family member who doesn't have discord but you really need your friends to know what they said? then you can use the !oquote command (short for !outsidequote). This allows you to quote non-discord users as you can see in the examples below:<br><br><b>!oquote [My Mum] "I'm a cat girl"</b><br><b>!oquote [Average overwatch player] "When in doubt bastion out!" </b></p>
                                 <br><br>
-                                <p><b>!edit</b> - </p>
+                                <p><b>!edit</b> - [This currently only works with !quote created quotes, not !quote2 or !oquote (they are still in development)] Everyone is prone to making a typo every now and again so the !edit command allows you to fix any errors you make. Using this command you can edit either the quote it's self, or the person you were quoting by following this format: <br><br><b>!edit {quoteID} quote "Hey, this is the version without the typo!"</b> <br>or<br> <b>!edit {quoteID} person @ThePersonWhoActuallySaidTheFunnyThing</b><br><br>For this, i should clarify, the 'quoteID' is the discord Message's ID, if you don't know how to find that, you can read the steps in <a href="https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-">this offical discord post</a>.  It is also important to remember, every discord message has a different ID so it is important to use the original ID of the quote (the first time the quote was posted, usually in the servers dedicated quote channel) as the IDs of any other copies of the quote, such as those that may come up when using the !randomquote, !quotesearch or !getquote command won't work.<br>You can see full examples of how the quote should work below:</p>
+                                <p><b>!edit 918894597797724270 quote "Hahaha"</b><br><b>!edit 918893635662147594 person @max</b></p>
                                 <br><br>
-                                <p><b>!random</b> - </p>
+                                <p><b>!random</b> - This command is very simple, it just finds and posts a random quote from the server (if you are going through a lot of random ones, you can shorten the command to !r although this command does have a short cooldown)</p>
                                 <br><br>
-                                <p><b>!quotesearch</b> - </p>
+                                <p><b>!quotesearch</b> - This command is used for searching for quotes that contain certain words or phrases, you can see how they would be used below:</p>
+                                <p><b>!quotesearch "Jinx"</b><br><b>!quotesearch f***</b></p>
+                                <p>Both of these will return any quotes that contain those words / phrases.</p>
                                 <br><br>
-                                <p><b>!getquote</b> - </p>
+                                <p><b>!getquote</b> - If you ever want a random quote from a specific person, this is the command for you, it is as simple as mentioning them after the command and a random one of their quotes will be posted, some examples are shown below:</p>
+                                <p><b>!getquote @Max</b><br><b>!getquote 839902058362699806</b></p>
                                 <br><br>
-                                <p><b>!getquotes</b> - </p>
+                                <p><b>!getquotes</b> - This command is almost identical to the command above however this one can get multiple quotes from a person. It is used as demonstrated below:</p>
+                                <p><b>!getquote @Max 10</b><br><b>!getquote 839902058362699806 15</b></p>
+                                <p>These will both return 10 and 15 quotes from the specified person respectfully (assuming they have that many quotes)</p>
                                 <br><br>
-                                <p><b>!quotestats</b> - </p>
+                                <p><b>!quotestats</b> - Ever wondered how many times you have been quoted or how many quotes you have made? well, this command can find that for you, as well as the stats of others!</p>
+                                <p><b>!quotestats</b><br><b>!quotestats @Abby</b></p>
+                                <p>The first example above will return your quote stats, the second will return the stats of the person mentioned (using their discord ID will also work rather than pinging them)</p>
                                 <br><br>
-                                <p><b>!guess</b> - </p>
+                                <p><b>!guess</b> - This command will bring up one of 3 games assuming they're enabled in the server, these games often include guessing who said or who didn't say a certain quote.</p>
                                 <br><br>
-                                <p><b>!gamestats</b> - </p>
+                                <p><b>!gamestats</b> - Similar to quotestats, this will give you information about your stats in relation to the !guess games, see the examples below for how to use it:</p>
+                                <p><b>!gamestats</b><br><b>!gamestats @Martin</b></p>
+                                <p>The first example above will return your game stats, the second will return the stats of the person mentioned (using their discord ID will also work rather than pinging them)</p>
                                 <br><br>
-                                <p><b>!starwarsquote</b> - </p>
+                                <p><b>!starwarsquote</b> - This is as simple as it sounds, it will give you a random starwars quote since ... why not?</p>
                             </div>
                             
                             <!-- end col -->
