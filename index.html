@@ -229,15 +229,15 @@
                                 <br><br>
                                 <p><b>!gameleaderboard</b> - This is another simple command, all this one does is show a leaderboard of the people in your server in relation to the games </p>
                                 <br><br>
-                                <p><b>!guesses</b> - </p>
+                                <p><b>!guesses</b> - This command simply shows how may times any of the !guess games have been played within your server</p>
                                 <br><br>
-                                <p><b>!mydata</b> - </p>
+                                <p><b>!mydata</b> - [This command is still being tested] This command will collect all the data QuoteBots database stores about you, and it will DM it to you in the form of a HTML document</p>
                                 <br><br>
-                                <p><b>!delete</b> - </p>
+                                <p><b>!delete</b> - [This command is still being developed] This command will allow you to delete / anonymise all data relating to you that is stored in QuoteBots database, this includes deleting quotes made about you, outsider quotes you have made, your scores, any of your data stored in the databases cache, alongside anonymising any quotes you made.</p>
                                 <br><br>
-                                <p><b>!uptime</b> - </p>
+                                <p><b>!uptime</b> - This will simply show you both the bot and the servers uptime.</p>
                                 <br><br>
-                                <p><b>!ping</b> - </p>
+                                <p><b>!ping</b> - This will show you the bots ping.</p>
                             </div>
                             
                             <!-- end col -->
@@ -249,39 +249,47 @@
                         <div class="row">
                             <div class="col-md-12 left-align">
                                 <h4 id="line2_2">Admin Commands - </h4>
-                                <p><b>!setquotechannel</b> - </p>
+                                <p><b>!setquotechannel</b> - This is used to set which channel you would like any quotes that are made to be sent and stored in (I suggest having a dedicated channel for this). You can see how it is used below:</p>
+                                <p><b>!setquotechannel 878028210602922005</b><br><b>!setquotechannel #inspirational-quotes</b></p>
+                                <p>As you can see, both the # for the channel and its ID can be used.</p>
                                 <br><br>
-                                <p><b>!setbotchannel</b> - </p>
+                                <p><b>!setbotchannel</b> - The bot channel is used if you want to restrict bot commands such as !guess, !quotesearch and !getquotes to a bot channel, this doesn't affect the commands used to create a quote as the bot quickly deletes the message and any messages it sends as to prevent spam.</p>
+                                <p><b>!setquotechannel 878028210602924730</b><br><b>!setbotchannel #bot-spam</b></p>
                                 <br><br>
-                                <p><b>!restrictcommands</b> - </p>
+                                <p><b>!restrictcommands</b> - [This command is going to be updated soon] This is used in conjunction with !setbotchannel to toggle whether the commands considered more 'spammy' should be restricted to the bot channel or not, it can be used as shown below</p>
+                                <p><b>!restrictcommands true</b><br><b>!restrictcommands false</b></p>
                                 <br><br>
-                                <p><b>!config</b> - </p>
+                                <p><b>!config</b> - [This command is going to be updated soon] This command with show you all the current configurations for your server, from members blacklised from certain command outputs (see below) to what channel is set as your quote channel etc.</p>
                                 <br><br>
-                                <p><b>!addrandomblacklist</b> - </p>
+                                <p><b>!addrandomblacklist</b> - This command is used to stop a quotes made about a specific user from showing up when anyone uses !random. You may find this useful if there was a falling out within the group or if you think someones quotes might be a little too inappropriate to have coming up again and again. See how to use this command below:</p>
+                                <p><b>!addrandomblacklist 209026834115985407</b><br><b>!addrandomblacklist @Max</b></p>
                                 <br><br>
-                                <p><b>!removerandomblacklist</b> - </p>
+                                <p><b>!removerandomblacklist</b> - This is used for removing someone from the random quotes blacklist that was described above and is used in the exact same way, see below:</p>
+                                <p><b>!removerandomblacklist 209026834115985407</b><br><b>!removerandomblacklist @Max</b></p>
                                 <br><br>
-                                <p><b>!addgamesblacklist</b> - </p>
+                                <p><b>!addgamesblacklist</b> - This command stops quotes of a certain user from appearing in the !guess games, this may be useful if you haven't disabled the users ability to quote bots and simply don't want bots quotes from being used in the games, similarly this can be used to stop specific users quotes from appearing, see how to use it below:</p>
+                                <p><b>!addgamesblacklist 672554834115985407</b><br><b>!addgamesblacklist @QuoteBot</b></p>
                                 <br><br>
-                                <p><b>!removegamesblacklist</b> - </p>
+                                <p><b>!removegamesblacklist</b> - This is used for removing someone from the !guess games blacklist meaning there quotes may come up in any of the games again.</p>
+                                <p><b>!removegamesblacklist 672554834115985407</b><br><b>!removegamesblacklist @QuoteBot</b></p>
                                 <br><br>
-                                <p><b>!addgamesblacklist</b> - </p>
+                                <p><b>!addgamethreeblacklist</b> - This command is very specific but it can be useful ~ the stops certain users from appearing in the third game that !guess may bring up. This game is focused on guessing who joined the discord server first. So you obviously might want to disable the servers owner as they're usually always the person who joined first. you can see how to use it below:</p>
+                                <p><b>!addgamethreeblacklist 56478512354987425</b><br><b>!addgamethreeblacklist @Charlie</b></p>
                                 <br><br>
-                                <p><b>!removegamesblacklist</b> - </p>
+                                <p><b>!removegamethreeblacklist</b> - This one is fairly self-explanatory, it removes people from the blacklist described in the command above. </p>
+                                <p><b>!removegamethreeblacklist 56478512354987425</b><br><b>!removegamethreeblacklist @Charlie</b></p>
                                 <br><br>
-                                <p><b>!addgamethreeblacklist</b> - </p>
+                                <p><b>!enablegameone</b> - If you want to disable game one from coming up in your server, this command can help you do it! Game one is also known as "Guess who said the quote ...".</p>
                                 <br><br>
-                                <p><b>!removegamethreeblacklist</b> - </p>
+                                <p><b>!enablegametwo</b> - If you want to disable game two from coming up in your server, you can do it with this command. Game two is also known as "Guess which of the quotes wasn't said by ...".</p>
                                 <br><br>
-                                <p><b>!enablegameone</b> - </p>
+                                <p><b>!enablegamethree</b> -  If you want to disable game three from coming up in your server, you can use this command. Game three is also known as "Guess who joined the server first". The main reason someone may want to disable this game is if everyone joined the server at very similar times .</p>
                                 <br><br>
-                                <p><b>!enablegametwo</b> - </p>
+                                <p><b>!enablecensor</b> - [This command is going to be updated soon] This command will hide the creator of a quote when it appears in the !random, !getquote(s) or !quotesearch commands if the creator is on the random quote blacklist. You can see how to use this command below:</p>
+                                <p><b>!enablecensor true</b><br><b>!enablecensor false</b></p>
                                 <br><br>
-                                <p><b>!enablegamethree</b> - </p>
-                                <br><br>
-                                <p><b>!enablecensor</b> - </p>
-                                <br><br>
-                                <p><b>!enablebotquoting</b> - </p>
+                                <p><b>!enablebotquoting</b> - [This command is going to be updated soon] This command simple lets you stop or allow people to quote bots opposed to actual users.</p>
+                                <p><b>!enablebotquoting true</b><br><b>!enablebotquoting false</b></p>
                                 <br><br>
                             </div>
                             <!-- end col -->
