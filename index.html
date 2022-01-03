@@ -242,6 +242,15 @@
                                 <p><b>!uptime</b> - This will simply show you both the bot and the servers uptime.</p>
                                 <br><br>
                                 <p><b>!ping</b> - This will show you the bots ping.</p>
+                                <br><br>
+                                <p><b>!myvote</b> - This command will show you all of your votes for the QOTY nominations (if a QOTY event is currently happening)</p>       
+                                <br><br>         
+                                <p><b>!meta</b> - This command will let you see various details about a quote, it is best used with the message ID of the quote (in servers with legacy quotes this may not always work). You can see examples of how to use it below:</p>       
+                                <p><b>!meta 914365674602766346</b><br><b>!meta 926639487663108126</b></p>
+                                <br><br>   
+                                <p><b>!qoty</b> - This command is used to cast your vote during a QOTY event. It is followed by either an @mention of a user or the message ID of a quote from the previous year that you would like to nominate as shown below:</p>       
+                                <p><b>!qoty 914365674602761029</b><br><b>!qoty 926619487663107384</b></p>
+                                <br><br>    
                             </div>
                             
                             <!-- end col -->
@@ -295,6 +304,10 @@
                                 <p><b>!enablebotquoting</b> - [This command is going to be updated soon] This command simple lets you stop or allow people to quote bots opposed to actual users.</p>
                                 <p><b>!enablebotquoting true</b><br><b>!enablebotquoting false</b></p>
                                 <br><br>
+                                <p><b>!qotyrestrict</b> - Using this command will bring up a selection box allowing you to restrict people in the General Blacklist (previously known as the 'random blacklist') from participating in QOTY. Quotes of them will not be able to be used in QOTY, nor will they be able to participate.</p>
+                                <br><br>
+                                <p><b>!startqoty</b> - [This command is going to be updated soon] This command is used to start QOTY in your server, carrying out a series of actions such as creating a channel dedicated to QOTY and explaining how users can participate in QOTY</p>
+                                <br><br>
                             </div>
                             <!-- end col -->
                         </div>
@@ -305,37 +318,38 @@
                         <div class="row">
                             <div class="col-md-12 left-align">
                                 <h4 id="line2_3">Owner Commands - </h4>
-                                <p><b>!addwhitelist</b> - </p>
+                                <p><b>!addwhitelist</b> - This allows you to add guilds to a whilelist that isn't resticted by command cooldowns and has more lenient result limits in terms of the number of results it will post on a !searchquote, !searchdate or !getquotes </p>
                                 <br><br>
-                                <p><b>!removewhitelist</b> - </p>
+                                <p><b>!removewhitelist</b> - This removes a guild from the whitelist described above</p>
                                 <br><br>
-                                <p><b>!setdebug</b> - </p>
+                                <p><b>!setdebug</b> - This sets the debug level for the bot, each level shown below:</p>
+                                <p><b>!setdebug 1</b><br>Prints to terminal<br><br><b>!setdebug 2</b><br>Prints to terminal<br>Sends a message to the pre-defined debug channel<br><br><b>!setdebug 3</b><br>Prints to terminal<br>Sends a message to the pre-defined debug channel<br>Saves the error to a text file<br></p>
                                 <br><br>
-                                <p><b>!globalconfiguration</b> - </p>
+                                <p><b>!globalconfiguration</b> - This prints all the global configuration values</p>
                                 <br><br>
-                                <p><b>!speed</b> - </p>
+                                <p><b>!speed</b> - This runs a speed test on the server <b>THIS WILL LIKELY CAUSE ISSUES WITH THE BOT WHILE RUNNING</b></p>
                                 <br><br>
-                                <p><b>!gamestatus</b> - </p>
+                                <p><b>!gamestatus</b> - This will show which games are enabled and which are disabled within a given server</p>
                                 <br><br>
-                                <p><b>!setnickname</b> - </p>
+                                <p><b>!setnickname</b> - This sets the nickname used in public facing error messages</p>
                                 <br><br>
-                                <p><b>!setmaxresults</b> - </p>
+                                <p><b>!setmaxresults</b> - This sets the max results send after a !searchquote, !searchdate or !getquotes for non-whitelisted servers</p>
                                 <br><br>
-                                <p><b>!setcache</b> - </p>
+                                <p><b>!setcache</b> - This sets the time, in seconds that a users data is cached for</p>
                                 <br><br>
-                                <p><b>!disableallcommands</b> - </p>
+                                <p><b>!disableallcommands</b> - This will disable every bot command - when someone other than the owner tries to run a command, it will show the message set with the command '!setdisableallmessage'</p>
                                 <br><br>
-                                <p><b>!disabledbcommands</b> - </p>
+                                <p><b>!disabledbcommands</b> - This will disable all commands that make use of a database</p>
                                 <br><br>
-                                <p><b>!setdisableallmessage</b> - </p>
+                                <p><b>!setdisableallmessage</b> - This sets the message for when someone tries to use a disabled command</p>
                                 <br><br>
-                                <p><b>!setdisabledbmessage</b> - </p>
+                                <p><b>!setdisabledbmessage</b> - This sets the message for when someone tries to use a disabled command</p>
                                 <br><br>
-                                <p><b>!setoutsidequoteeimage</b> - </p>
+                                <p><b>!setoutsidequoteeimage</b> - This sets the pfp used for 'outside quoters'</p>
                                 <br><br>
-                                <p><b>!sethelpimage</b> - </p>
+                                <p><b>!sethelpimage</b> - This sets the image that is shown alongside any help embeds</p>
                                 <br><br>
-                                <p><b>!setgameauthorimage</b> - </p>
+                                <p><b>!setgameauthorimage</b> - This is the image used for 'guess who said' games pre-guess</p>
                                 <br><br>
                                 <p><b>!addpoints</b> - </p>
                                 <br><br>
@@ -348,6 +362,8 @@
                                 <p><b>!shutdown</b> - </p>
                                 <br><br>
                                 <p><b>!qpurge</b> - </p>
+                                <br><br>
+                                <p><b>!message</b> - </p>
                                 <br><br>
                             </div>
                             <!-- end col -->
